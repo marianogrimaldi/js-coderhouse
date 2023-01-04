@@ -1,0 +1,467 @@
+// GLOBAL
+
+* { margin: 0; 
+
+    padding:0;}   
+
+img 
+    { 
+    
+    max-width: 100%; 
+
+    } 
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 5rem;
+    text-shadow: 3px 3px 3px rgb(255, 0, 0);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+// INDEX
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+   background-image: linear-gradient(red, black);
+   margin-bottom: 3rem;
+.little-logo {
+    width: 4rem;
+}
+    ul {
+        list-style-type: none;
+        color: white;
+        font-size: 1.5rem;
+        display: flex;
+      margin: 2rem;
+        padding: 1rem;
+       font-family:  'Reem Kufi', sans-serif;
+       font-weight: bolder;
+        gap: 3rem;
+      
+        align-items: center;
+        margin-top: 1rem;
+        
+        
+       img {
+        width: 8rem;
+       }
+    }
+}
+
+
+.section-1 {
+    margin-bottom: 10rem;
+}
+
+
+
+    .carousel-flex {
+        display: flex;
+        align-items: center;
+        
+        flex-direction: column;
+
+
+    }
+
+    .img-tamaño {
+        height: 40rem;
+       
+        
+    }
+
+    .section-2 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: -webkit-linear-gradient(rgb(0, 0, 0), red, red,red,black);
+        margin-bottom: 10rem;
+    }
+
+    .datos-novedades {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Reem Kufi', sans-serif;
+        color: white;
+        gap: 2rem;
+        
+       h1 {
+        font-size: 4rem;
+       }
+    }
+
+    .img-novedades {
+        width: 35rem;
+        border: solid 1rem;
+        border-color: red;
+       
+    }
+
+    .section-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 2rem;
+        
+        h2 {
+            font-family:'Reem Kufi', sans-serif;
+            font-size: 4rem;
+        }
+
+      
+
+        .logo-batidor {
+            width: 8rem;
+        }
+    }
+
+    .postres {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        p {
+            color: white;
+            text-align: center;
+        }
+
+        img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 1rem;
+        }
+    }
+
+    .franui {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        
+
+        h2 {
+            color:white;
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 4rem;
+        }
+       
+        img {
+            width: 20rem;
+            border-radius: 1rem;
+            
+           
+        }
+    }
+
+    footer {
+        background-image: linear-gradient(black, red);
+
+
+        .flex-contact {
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            color:white;
+            font-size: 4rem;
+            font-family: 'Reem Kufi', sans-serif;
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .form-contacto {
+            color:white;
+            
+
+        }
+
+        img {
+            width: 40rem;
+        }
+
+
+
+    }   
+
+// PRODUCTS
+
+.section-products-burger {
+    color:white;
+    font-family: 'Reem Kufi', sans-serif;
+    margin-bottom: 10rem;
+
+
+        h1 {
+            
+            text-align: center;
+        }
+
+        h2 {
+           
+            font-size: 3rem;
+        }
+
+        
+        p {
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 15rem;
+            height: 15rem;
+           
+            border-radius: 1rem;
+            transition: 1s;
+        }
+
+        img:hover {
+            width: 20rem;
+            height: 20rem;
+           
+            
+        }
+
+        .burger-grid {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            gap: 3rem;
+           
+            grid-template-columns:  1fr 2fr;
+            grid-template-rows: repeat(12, 1fr);
+
+            div, img {
+                background-image: linear-gradient(to right,black, red, black);
+            }
+
+           h2, p{
+            margin-right: 2rem;
+           } 
+
+        }
+
+
+        
+    }
+    .flex-burger {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 7rem;
+
+    img {
+        width: 8rem;
+        height: 8rem;
+     
+      
+    }
+    img:hover {
+        width: 8rem;
+        height: 8rem;
+       
+        
+    }
+    }
+
+.section-product-postres {
+    color:white;
+    font-family:'Reem Kufi', sans-serif;
+    margin-bottom: 10rem;
+    
+
+    h3 {
+       font-size:5rem;
+       text-align: center;
+       
+    }
+    h4 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 15rem;
+        height: 15rem;
+       
+        border-radius: 1rem;
+        transition: 1s;
+    }
+
+    img:hover {
+        width: 20rem;
+        height: 20rem;
+       
+        
+    }
+
+    .postres-grid {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        gap: 3rem;
+       
+        grid-template-columns:  1fr 2fr;
+        grid-template-rows: repeat(5, 1fr);
+
+        div, img {
+            background-image: linear-gradient(to right,black, red, black);
+        }
+
+       h2, p{
+        margin-right: 2rem;
+       } 
+
+    }
+}
+.flex-postre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 7rem;
+
+    img {
+        width: 8rem;
+        height: 8rem;
+     
+      
+    }
+    img:hover {
+        width: 8rem;
+        height: 8rem;
+       
+        
+    }
+}
+.compras {
+    h1 {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+     
+    }
+}
+
+.grid-section-compras {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   
+    row-gap: 2rem;
+    justify-items: center;
+    
+ 
+
+    h5 {
+        text-align: center;
+    }
+
+    li {
+        text-align: center;
+    }
+}
+
+
+.carrito {
+    width: 1.5rem;
+}
+
+.combos {
+    h2 {
+        color: white;
+        font-size: 5rem;
+        font-family: 'Reem Kufi', sans-serif;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+      
+        
+    }
+}
+
+.adicionales {
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+    
+   
+
+    h3 {
+        font-size: 3rem;
+        font-family: 'Reem Kufi', sans-serif;
+    }
+    
+    li {
+        font-size: 2rem;
+        font-family: 'Reem Kufi', sans-serif;
+        list-style-type: none;
+        
+      
+    }
+
+
+}
+
+.section-compras-postres {
+   
+
+    h2 {
+
+         color: white;
+        font-size: 5rem;
+        font-family: 'Reem Kufi', sans-serif;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+       
+
+        
+   
+   
+}
+ .grids-postres {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: repeat(2, 1fr);
+           row-gap: 2rem;
+    justify-items: center;
+
+    h5 {
+        text-align: center;
+    }
+
+    li {
+        text-align: center;
+    }
+        }
+
+#logoBatidor-compras {
+    width: 15rem;
+    margin-top: 3rem;
+}

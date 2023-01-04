@@ -1,0 +1,357 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 5rem;
+  text-shadow: 3px 3px 3px rgb(255, 0, 0);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(red, black);
+  margin-bottom: 3rem;
+}
+.header-flex .little-logo {
+  width: 4rem;
+}
+.header-flex ul {
+  list-style-type: none;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  margin: 2rem;
+  padding: 1rem;
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: bolder;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+.header-flex ul img {
+  width: 8rem;
+}
+
+.section-1 {
+  margin-bottom: 10rem;
+}
+
+.carousel-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-tamaño {
+  height: 40rem;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: -webkit-linear-gradient(rgb(0, 0, 0), red, red, red, black);
+  margin-bottom: 10rem;
+}
+
+.datos-novedades {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Reem Kufi", sans-serif;
+  color: white;
+  gap: 2rem;
+}
+.datos-novedades h1 {
+  font-size: 4rem;
+}
+
+.img-novedades {
+  width: 35rem;
+  border: solid 1rem;
+  border-color: red;
+}
+
+.section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 2rem;
+}
+.section-3 h2 {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 4rem;
+}
+.section-3 .logo-batidor {
+  width: 8rem;
+}
+
+.postres {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.postres p {
+  color: white;
+  text-align: center;
+}
+.postres img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+}
+
+.franui {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.franui h2 {
+  color: white;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 4rem;
+}
+.franui img {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+footer {
+  background-image: linear-gradient(black, red);
+}
+footer .flex-contact {
+  display: flex;
+  justify-content: center;
+}
+footer h2 {
+  color: white;
+  font-size: 4rem;
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+footer .form-contacto {
+  color: white;
+}
+footer img {
+  width: 40rem;
+}
+
+.section-products-burger {
+  color: white;
+  font-family: "Reem Kufi", sans-serif;
+  margin-bottom: 10rem;
+}
+.section-products-burger h1 {
+  text-align: center;
+}
+.section-products-burger h2 {
+  font-size: 3rem;
+}
+.section-products-burger p {
+  font-size: 1.5rem;
+}
+.section-products-burger img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  transition: 1s;
+}
+.section-products-burger img:hover {
+  width: 20rem;
+  height: 20rem;
+}
+.section-products-burger .burger-grid {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  gap: 3rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(12, 1fr);
+}
+.section-products-burger .burger-grid div, .section-products-burger .burger-grid img {
+  background-image: linear-gradient(to right, black, red, black);
+}
+.section-products-burger .burger-grid h2, .section-products-burger .burger-grid p {
+  margin-right: 2rem;
+}
+
+.flex-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+.flex-burger img {
+  width: 8rem;
+  height: 8rem;
+}
+.flex-burger img:hover {
+  width: 8rem;
+  height: 8rem;
+}
+
+.section-product-postres {
+  color: white;
+  font-family: "Reem Kufi", sans-serif;
+  margin-bottom: 10rem;
+}
+.section-product-postres h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+.section-product-postres h4 {
+  font-size: 3rem;
+}
+.section-product-postres p {
+  font-size: 1.5rem;
+}
+.section-product-postres img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  transition: 1s;
+}
+.section-product-postres img:hover {
+  width: 20rem;
+  height: 20rem;
+}
+.section-product-postres .postres-grid {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  gap: 3rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+.section-product-postres .postres-grid div, .section-product-postres .postres-grid img {
+  background-image: linear-gradient(to right, black, red, black);
+}
+.section-product-postres .postres-grid h2, .section-product-postres .postres-grid p {
+  margin-right: 2rem;
+}
+
+.flex-postre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+.flex-postre img {
+  width: 8rem;
+  height: 8rem;
+}
+.flex-postre img:hover {
+  width: 8rem;
+  height: 8rem;
+}
+
+.compras h1 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.grid-section-compras {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
+}
+.grid-section-compras h5 {
+  text-align: center;
+}
+.grid-section-compras li {
+  text-align: center;
+}
+
+.carrito {
+  width: 1.5rem;
+}
+
+.combos h2 {
+  color: white;
+  font-size: 5rem;
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.adicionales {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  text-align: center;
+}
+.adicionales h3 {
+  font-size: 3rem;
+  font-family: "Reem Kufi", sans-serif;
+}
+.adicionales li {
+  font-size: 2rem;
+  font-family: "Reem Kufi", sans-serif;
+  list-style-type: none;
+}
+
+.section-compras-postres h2 {
+  color: white;
+  font-size: 5rem;
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.grids-postres {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
+}
+.grids-postres h5 {
+  text-align: center;
+}
+.grids-postres li {
+  text-align: center;
+}
+
+#logoBatidor-compras {
+  width: 15rem;
+  margin-top: 3rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
