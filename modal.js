@@ -15,6 +15,10 @@ function registrarNombre (){
 }
 
 function escribirNombre(nombre){
-    //1 - Buscar el elemento HTML donde va a ir el nombre
-    //2 - Por medio del innerHTML agregar el texto con el nombre del parámetro
+    document.getElementById("saludoCliente").append(`Bienvenido ${nombre} al sistema `);
+}
+
+//Función agregada solamente para poder limpiar de manera más rápida el cliente, en las pruebas.
+function limpiarStorage(){
+    localStorage.removeItem("cliente");
 }
