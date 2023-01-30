@@ -10,9 +10,7 @@ img
     max-width: 100%; 
 
     } 
-body {
-    background-color: black;
-}
+
 
 h1 {
     color: white;
@@ -24,6 +22,34 @@ a {
     color: white;
     text-decoration: none;
 }
+
+// DARK MODE
+.btnsdark-ligth {
+    display: flex;
+    gap: 1rem;
+    font-family: 'Reem Kufi', sans-serif;
+    justify-content: center;
+}
+.modoOscuro {
+    background-color: black;
+    color: red;
+}
+
+#darkmode {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#lightmode {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+
+
 // INDEX
 
 .header-flex {
@@ -364,7 +390,7 @@ a {
     }
 }
 
-.grid-section-compras {
+#grid-hamb {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);

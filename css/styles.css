@@ -8,10 +8,6 @@ img {
   max-width: 100%;
 }
 
-body {
-  background-color: black;
-}
-
 h1 {
   color: white;
   font-family: "Reem Kufi", sans-serif;
@@ -22,6 +18,32 @@ h1 {
 a {
   color: white;
   text-decoration: none;
+}
+
+.btnsdark-ligth {
+  display: flex;
+  gap: 1rem;
+  font-family: "Reem Kufi", sans-serif;
+  justify-content: center;
+}
+
+.modoOscuro {
+  background-color: black;
+  color: red;
+}
+
+#darkmode {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#lightmode {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 .header-flex {
@@ -282,17 +304,17 @@ footer img {
   margin-bottom: 3rem;
 }
 
-.grid-section-compras {
+#grid-hamb {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   row-gap: 2rem;
   justify-items: center;
 }
-.grid-section-compras h5 {
+#grid-hamb h5 {
   text-align: center;
 }
-.grid-section-compras li {
+#grid-hamb li {
   text-align: center;
 }
 

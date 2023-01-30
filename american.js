@@ -1,30 +1,78 @@
-
 //Clase de tipoHamburguesa para identificar numero, nombre, tamaño y precio
 class TipoHamburguesa {
-    constructor (num, name, size, price){
+    constructor (num, name, sizes, image){
         this.num = num;
         this.name = name;
-        this.size = size;
-        this.price = price;
+        this.sizes = sizes;
+        this.image = image;
+    }
+
+}
+class tamañoHamb {
+    constructor (nombre, precio){
+        this.nombre = nombre;
+        this.precio = precio;
     }
 
 }
 //Array para agrupara las clases de hamburguesas
 const tiposDeHamburguesa = [
-    new TipoHamburguesa(1,"Argenta", "simple",770),
-    new TipoHamburguesa(2,"Argenta", "doble",1000),
-    new TipoHamburguesa(3,"Barbacoa", "simple",770),
-    new TipoHamburguesa(4,"Barbacoa", "doble",1000),
-    new TipoHamburguesa(5,"Big American", "simple",690),
-    new TipoHamburguesa(6,"Big American", "doble",920),
-    new TipoHamburguesa(7,"Bluecheese", "simple",700),
-    new TipoHamburguesa(8,"Bluecheese", "doble",930),
-    new TipoHamburguesa(9,"Cheddar y Bacon", "simple",770),
-    new TipoHamburguesa(10,"Cheddar y Bacon", "doble",1000),
-    new TipoHamburguesa(11,"Cheeseburger", "simple",660),
-    new TipoHamburguesa(12,"Cheeseburger", "doble",890),
-
+    new TipoHamburguesa(1,"Argenta", [new tamañoHamb("simple",770), new tamañoHamb("doble",1000)],
+        "./img/burgers/argenta.png"),
+    new TipoHamburguesa(2,"Barbacoa", [new tamañoHamb("simple",770), new tamañoHamb("doble",1000)],
+        "./img/burgers/barbacoa.png"),
+    new TipoHamburguesa(3,"Big American", [new tamañoHamb("simple",690), new tamañoHamb("doble",920)],
+        "./img/burgers/bigamerican.png"),
+    new TipoHamburguesa(4,"Bluecheese", [new tamañoHamb("simple",700), new tamañoHamb("doble",930)],
+        "./img/burgers/bluecheese.png"),
+    new TipoHamburguesa(5,"Cheddar y Bacon", [new tamañoHamb("simple",770), new tamañoHamb("doble",1000)],
+        "./img/burgers/chedarybacon.png"),
+    new TipoHamburguesa(6,"Cheeseburger", [new tamañoHamb("simple",660), new tamañoHamb("doble",890)],
+        "./img/burgers/cheeseburger.png"),
+    new TipoHamburguesa(7,"Clasica", [new tamañoHamb("simple",690), new tamañoHamb("doble",920)],
+        "./img/burgers/clasica.png"),
+    new TipoHamburguesa(8,"Doble Cuarto", [new tamañoHamb("simple",690), new tamañoHamb("doble",920)],
+        "./img/burgers/doblecuarto.png"),
+    new TipoHamburguesa(9,"Extreme", [new tamañoHamb("simple",770), new tamañoHamb("doble",1000)],
+        "./img/burgers/extreme.png"),
+    new TipoHamburguesa(10,"Italy", [new tamañoHamb("simple",770), new tamañoHamb("doble",930)],
+        "./img/burgers/italy.png"),
+    new TipoHamburguesa(7,"Oklahoma", [new tamañoHamb("simple",770), new tamañoHamb("doble",930)],
+        "./img/burgers/oklahoma.png"),
+    new TipoHamburguesa(7,"Patty Melt", [new tamañoHamb("simple",980) ],
+        "./img/burgers/pattymelt.png"),
+    
 ]; 
+
+let gridHamb = document.getElementById("grid-hamb")
+
+for(let TipoHamburguesa of tiposDeHamburguesa ){
+    let sizesPrices = "";
+    for(let tamañoHamb of TipoHamburguesa.sizes){
+        sizesPrices += ` <li class="list-group-item">${tamañoHamb.nombre} $${tamañoHamb.precio}<img onclick="alert('${TipoHamburguesa.name}-${tamañoHamb.nombre}')" src="img/carrito.png" class="carrito" alt="carrito"></li>`
+    }
+
+    let newcards = document.createElement("div")
+    newcards.innerHTML = `<div class="card" style="width: 10rem; height: 17rem;">
+    <img src=${TipoHamburguesa.image} class="card-img-top" alt="imagen hamburguesa">
+    <div>
+        <h5>${TipoHamburguesa.name}</h5>
+    </div>
+         <ul class="list-group list-group-flush">
+           ${sizesPrices}
+        </ul>
+    </div>`
+    gridHamb.appendChild(newcards)
+
+} 
+
+
+
+
+
+
+/*
+
 
 //Array para ingresar las hamburgesesas seleccionados por el usuario
 let hambSelected = [];
@@ -148,6 +196,19 @@ hambSelected.forEach(element => {
 
 //Mensaje final (alert) el precio total de las hamburguesas seleccionadas y un listado de lo que se compro.
 alert (`${hambCompradas} \n El precio total es $ ${precioTotal} \n GRACIAS POR SU COMPRA`);
+
+
+
+*/
+
+
+
+
+
+
+
+
+
 
 
 
