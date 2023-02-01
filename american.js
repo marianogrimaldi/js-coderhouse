@@ -8,6 +8,7 @@ class TipoHamburguesa {
     }
 
 }
+// Clase pare identificar el temaño y precio de las hamb.
 class tamañoHamb {
     constructor (nombre, precio){
         this.nombre = nombre;
@@ -15,6 +16,8 @@ class tamañoHamb {
     }
 
 }
+let carrito = [];
+let valorCompra = 0;
 //Array para agrupara las clases de hamburguesas
 const tiposDeHamburguesa = [
     new TipoHamburguesa(1,"Argenta", [new tamañoHamb("simple",770), new tamañoHamb("doble",1000)],
@@ -49,7 +52,7 @@ let gridHamb = document.getElementById("grid-hamb")
 for(let TipoHamburguesa of tiposDeHamburguesa ){
     let sizesPrices = "";
     for(let tamañoHamb of TipoHamburguesa.sizes){
-        sizesPrices += ` <li class="list-group-item">${tamañoHamb.nombre} $${tamañoHamb.precio}<img onclick="alert('${TipoHamburguesa.name}-${tamañoHamb.nombre}')" src="img/carrito.png" class="carrito" alt="carrito"></li>`
+        sizesPrices += ` <li class="list-group-item">${tamañoHamb.nombre} $${tamañoHamb.precio}<img onclick="selecHamburguesa(${TipoHamburguesa.num},'${tamañoHamb.nombre}')" src="img/carrito.png" class="carrito" alt="carrito"></li>`
     }
 
     let newcards = document.createElement("div")
@@ -68,7 +71,24 @@ for(let TipoHamburguesa of tiposDeHamburguesa ){
 
 
 
+function selecHamburguesa (idTipoHamburguesa,nombreSize){
+    let hambur = getHamb(idTipoHamburguesa);
+    let sizeSelected = getSize(hambur,nombreSize)
+    carrito.push([hambur,sizeSelected]);
+    valorCompra += sizeSelected.precio;
+    document.getElementById("compraCliente").innerHTML = `Usted a seleccionado ${carrito.length} ${carrito.length > 1? "hamburguesas": "hamburguesa"} por un valor de $${valorCompra}`
 
+}
+
+
+function getHamb(idHamb){
+    return tiposDeHamburguesa.find(hamburguesa => hamburguesa.num == idHamb);
+    
+}
+
+function getSize(hambSelected, nombreSize){
+    return hambSelected.sizes.find(size => size.nombre === nombreSize);
+} 
 
 
 /*

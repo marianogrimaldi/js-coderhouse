@@ -46,6 +46,14 @@ a {
   border-radius: 10px;
 }
 
+#saludoCliente {
+  font-size: 2rem;
+  font-family: "Reem Kufi", sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+
 .header-flex {
   display: flex;
   align-items: center;
@@ -300,7 +308,7 @@ footer img {
 
 .compras h1 {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -316,6 +324,14 @@ footer img {
 }
 #grid-hamb li {
   text-align: center;
+}
+
+#compraCliente {
+  font-size: 2rem;
+  font-family: "Reem Kufi", sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
 }
 
 .carrito {
