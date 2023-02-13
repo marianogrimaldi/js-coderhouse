@@ -397,7 +397,22 @@ footer img {
 
 #logoBatidor-compras {
   width: 15rem;
+}
+
+#finCompra {
+  font-family: "Reem Kufi", sans-serif;
+  padding: 1rem;
+  text-shadow: 1px 1px 1px red;
+  font-size: 2rem;
   margin-top: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.flexCompra {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

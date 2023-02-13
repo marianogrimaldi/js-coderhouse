@@ -1,0 +1,189 @@
+[
+    {
+       "num": 1,
+       "name": "Argenta",
+       "sizes":[
+        {
+            "nombre": "simple",
+            "precio": 770
+        },
+        {
+            "nombre": "doble",
+            "precio": 1000
+        }
+       ],
+      "image":"./img/burgers/argenta.png"
+    },
+
+    {
+        "num": 2,
+        "name": "Barbacoa",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 770
+         },
+         {
+             "nombre": "doble",
+             "precio": 1000
+         }
+        ],
+       "image":"./img/burgers/barbacoa.png"
+     },
+
+     {
+        "num": 3,
+        "name": "Big American",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 690
+         },
+         {
+             "nombre": "doble",
+             "precio": 920
+         }
+        ],
+       "image":"./img/burgers/bigamerican.png"
+     },
+
+     {
+        "num": 4,
+        "name": "Bluecheese",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 700
+         },
+         {
+             "nombre": "doble",
+             "precio": 930
+         }
+        ],
+       "image":"./img/burgers/bluecheese.png"
+     },
+
+     {
+        "num": 5,
+        "name": "Cheddar y Bacon",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 770
+         },
+         {
+             "nombre": "doble",
+             "precio": 1000
+         }
+        ],
+       "image":"./img/burgers/chedarybacon.png"
+     },
+
+     {
+        "num": 6,
+        "name": "Cheeseburger",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 660
+         },
+         {
+             "nombre": "doble",
+             "precio": 890
+         }
+        ],
+       "image":"./img/burgers/cheeseburger.png"
+     },
+
+     {
+        "num": 7,
+        "name": "Clasica",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 690
+         },
+         {
+             "nombre": "doble",
+             "precio": 920
+         }
+        ],
+       "image":"./img/burgers/clasica.png"
+     },
+
+     {
+        "num": 8,
+        "name": "Doble Cuarto",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 690
+         },
+         {
+             "nombre": "doble",
+             "precio": 920
+         }
+        ],
+       "image":"./img/burgers/doblecuarto.png"
+     },
+
+     {
+        "num": 9,
+        "name": "Extreme",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 770
+         },
+         {
+             "nombre": "doble",
+             "precio": 1000
+         }
+        ],
+       "image":"./img/burgers/extreme.png"
+     },
+
+     {
+        "num": 10,
+        "name": "Italy",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 770
+         },
+         {
+             "nombre": "doble",
+             "precio": 930
+         }
+        ],
+       "image":"./img/burgers/italy.png"
+     },
+
+     {
+        "num": 11,
+        "name": "Oklahoma",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 770
+         },
+         {
+             "nombre": "doble",
+             "precio": 930
+         }
+        ],
+       "image":"./img/burgers/oklahoma.png"
+     },
+
+     {
+        "num": 12,
+        "name": "Patty Melt",
+        "sizes":[
+         {
+             "nombre": "simple",
+             "precio": 770
+         }
+        ],
+       "image":"./img/burgers/pattymelt.png"
+     }
+]
