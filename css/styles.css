@@ -415,4 +415,12 @@ footer img {
   justify-content: center;
 }
 
+legend {
+  font-family: "Reem Kufi", sans-serif;
+}
+
+label {
+  font-family: "Reem Kufi", sans-serif;
+}
+
 /*# sourceMappingURL=styles.css.map */

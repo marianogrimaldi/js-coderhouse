@@ -8,32 +8,30 @@ if(!nombreCliente){
 } else{
     escribirNombre(nombreCliente);
 }
-
+//registramos en el local para que no vuleva a preguntar la proxima vez que entramos al sitio.
 function registrarNombre (){
     let nombre = document.getElementById("nombreCliente");
-    // Argegar las validaciones del nombre (Que tenga datos, que sea algo racional, que no exceda determinada cantidad de caracteres, etc...)
     localStorage.setItem("cliente",nombre.value);
     escribirNombre(nombre.value);
     myModal.hide();
+    //le agregagamos un toastift para ponerle onda
     Toastify({
         text: "DEFINITIVAMENTE LAS HAMBURGUESAS MAS RICAS DEL MUNDO",
-    
         duration: 3000,
-       
         newWindow: true,
         close: true,
-        gravity: "bottom", // `top` or `bottom`
-        position: "center", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "bottom", 
+        position: "center", 
+        stopOnFocus: true, 
         style: {
           background: "red",
         },
-        onClick: function(){} // Callback after click
+        onClick: function(){} 
       }).showToast();
 }
-
+//frase de bienvemida al sector de compras
 function escribirNombre(nombre){
-    document.getElementById("saludoCliente").append(`Bienvenido ${nombre} a American Burger `);
+    document.getElementById("saludoCliente").append(`Bienvenido/a ${nombre} a American Burger `);
 }
 
 
